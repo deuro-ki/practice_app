@@ -1,0 +1,17 @@
+<% provide(:title, "link_to") %>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <%= link_to "削除", "root_path", method: :delete, data: { confirm: "本当に削除しますか？" } %>
+    <%= link_to "トップページ", "/", class: "hoge" %>
+    <%= link_to "/" do %>
+      <i class="fas fa-home"></i> トップページ
+    <% end %>
+    <%= link_to "Yahoo!", "https://www.yahoo.co.jp/" %><br>
+    <div class='p-top'>
+    <p class='p-top__title'>今回の記事の目標：<%= @title %>！</p>
+</div>
+  </body>
+</html>
